@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+description: Most of my work is not shareable outside of organizations such as Georgia Tech or places I've worked, but here are some things I've been working on in my spare time!
 nav: true
 nav_order: 4
 ---
