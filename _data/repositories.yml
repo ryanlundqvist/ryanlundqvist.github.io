@@ -1,12 +1,7 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - ryanlundqvist
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - ryanlundqvist/practice-pedal
+  - juliaraver/CS2340C_Team18
+  - monkeytypegame/monkeytype
