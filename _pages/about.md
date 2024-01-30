@@ -2,25 +2,29 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='https://www.cc.gatech.edu/'>Georgia Institute of Technology</a> - College of Computing
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>955 Spring Street</p>
+    <p>Atlanta, Georgia 30309</p>
+    <p></p>
 
 news: true # includes a list of news items
 latest_posts: true # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a Swedish-American dual citizen and a candidate for a Bachelor of Science in Computer Science at the Georgia Institute of Technology, with a specialization in artificial intelligence and human-computer interaction. I'm interested in research, ubiqutious computing, and herpetology. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an undergraduate studying Computer Science at the Georgia Institute of Technology, with a specialization in artificial intelligence and human-computer interaction. I have interests in software engineering, ubiqutious computing, AI/ML, and applied mathematics. Currently, I am working on research for the [SnakeCLEF](https://www.imageclef.org/SnakeCLEF2023) machine learning and information retrieval competition. I'm also on a team working on improving [PopSign](https://www.popsign.org/), a sign-language learning app made in partnership with Google. I've also been involved as a research assistant at the [Expressive Machinery Lab](https://expressivemachinery.gatech.edu/) working on web platforms for interacting with co-creative agents.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+On campus I'm involved with leadership for [Hacklytics](https://hacklytics.io/), Georgia Tech's Data Science Hackathon, in addition to acting as a bootcamp mentor/instructor teaching data analysis, data preprocessing, feature extraction, and introductory machine learning methods. In the past I was on leadership for Georgia Tech's CS+Social Good club, a CS Ethics organization hosting events on AI ethics, privacy, and more.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I have interned at the Savannah River Site, a U.S. Department of Energy Site, where I worked on a server monitoring app with Los Alamos National Laboratory and some AR/VR research with Savannah River National Laboratory.
+
+I'm also a hobby herpetologist and love spotting reptiles and amphibians in the wild! 🐍 
+
+The best way to contact me is by email: [ryan@lundqvist.us](ryan@lundqvist.us)
