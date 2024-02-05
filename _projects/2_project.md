@@ -1,6 +1,6 @@
 ---
 layout: page
-title: project 2
+title: SnakeCLEF Research Project
 description: a project with a background image and giscus comments
 img: assets/img/3.jpg
 importance: 2
