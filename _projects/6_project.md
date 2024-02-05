@@ -1,6 +1,6 @@
 ---
 layout: page
-title: project 6
+title: Sensor Data Analysis, AI Projects, Game Boy Projects, ETC
 description: a project with no image
 img:
 importance: 4
