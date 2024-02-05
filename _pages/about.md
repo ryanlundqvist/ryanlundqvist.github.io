@@ -26,5 +26,3 @@ On campus I'm involved with leadership for [Hacklytics](https://hacklytics.io/),
 I have interned at the Savannah River Site, a U.S. Department of Energy Site, where I worked on a server monitoring app with Los Alamos National Laboratory and some AR/VR research with Savannah River National Laboratory.
 
 I'm also a hobby herpetologist and love spotting reptiles and amphibians in the wild! 🐍 
-
-The best way to contact me is by email: [ryan@lundqvist.us](ryan@lundqvist.us)
