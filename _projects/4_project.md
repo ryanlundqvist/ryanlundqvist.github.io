@@ -1,6 +1,6 @@
 ---
 layout: page
-title: HackGT Winning Project
+title: HackGT Best Hardware Hack
 description: another without an image
 img:
 importance: 3
