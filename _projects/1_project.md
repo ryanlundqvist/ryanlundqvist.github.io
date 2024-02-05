@@ -1,6 +1,6 @@
 ---
 layout: page
-title: PopSignAI
+title: PopSign-AI
 description: isolated sign and fingerspelling machine learning recognition models
 img: assets/img/12.jpg
 importance: 1
