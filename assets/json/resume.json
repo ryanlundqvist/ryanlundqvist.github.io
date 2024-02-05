@@ -1,58 +1,31 @@
 {
   "basics": {
-    "name": "Ryan Lundqvist",
-    "label": "Computer Science Undergraduate",
+    "name": "Albert Einstein",
+    "label": "Scientist",
     "image": "",
-    "email": "ryan.lundqvist@icloud.com",
-    "phone": "(571) 528-1533",
-    "url": "",
-    "summary": "Undergraduate interested in software engineering and machine learning engineering positions. Casually interested in AI/ML, wearable computing, data science, and AR/VR.",
+    "email": "albert@einstein.de",
+    "phone": "(912) 123-4567",
+    "url": "https://alshedivat.github.io/al-folio/",
+    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Atlanta",
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
       "countryCode": "US",
-      "region": "Georgia"
+      "region": "California"
     },
     "profiles": [
       {
-        "network": "LinkedIn",
-        "username": "ryan-lundqvist",
-        "url": "https://www.linkedin.com/in/ryan-lundqvist/"
+        "network": "Twitter",
+        "username": "AlbertEinstein",
+        "url": "https://twitter.com/AlbertEinstein"
       }
     ]
   },
   "work": [
     {
-      "name": "US Department of Energy, Savannah River Site",
-      "position": "Software Engineer Intern",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-    {
-      "name": "Expressive Machinery Lab, Georgia Institute of Technology",
-      "position": "Research Assistant",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-    {
-      "name": "Smithsonian National Air & Space Museum, Udvar Hazy Center",
-      "position": "Explainer/Museum Aide",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-    {
-      "name": "Boliden AB",
-      "position": "Software Engineer Intern",
+      "name": "Institute for Advanced Study, Princeton University",
+      "position": "Professor of Theoretical Physics",
       "url": "https://example.com",
       "startDate": "1933-01-01",
       "endDate": "1955-01-01",
@@ -73,27 +46,20 @@
   ],
   "education": [
     {
-      "institution": "Georgia Institute of Technology",
-      "location": "Atlanta, Georgia",
+      "institution": "University of Zurich, Zurich, Switzerland",
+      "location": "Zurich, Switzerland",
       "url": "https://www.uzh.ch/",
       "area": "Software Development",
-      "studyType": "BS Computer Science (AI and HCI)",
+      "studyType": "PhD",
       "startDate": "1905-01-01",
       "endDate": "1905-01-01",
       "score": "10",
-      "courses": ["Design & Analysis of Algorithms"]
+      "courses": ["Theory of Relativity"]
     }
   ],
   "awards": [
     {
-      "title": "HackGT9 Best Hardware Hack",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-    {
-      "title": "IEEE Student Technology Achievement Award",
+      "title": "Nobel Prize in Physics",
       "date": "1921-11-01",
       "awarder": "Royal Swedish Academy of Sciences",
       "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
@@ -184,13 +150,13 @@
   ],
   "languages": [
     {
-      "language": "English",
+      "language": "German",
       "fluency": "Native speaker",
       "icon": ""
     },
     {
-      "language": "Swedish",
-      "fluency": "Intermediate",
+      "language": "English",
+      "fluency": "Fluent",
       "icon": ""
     }
   ],
