@@ -10,6 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Atlanta, Georgia</p>
+    <p>ryan@lundqvist.us</p>
     
 
 news: true # includes a list of news items
