@@ -8,9 +8,8 @@ category: work
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Conducting research on the improvement of and the creation of isolated sign language recognition models and fingerspelling recognition models for use in the PopSignAI mobile application. Additionally researching on reducing the complexity and latency of existing models, in addition to the creation of new generalized models for ASL recognition to be used in multiple levels of the PopSignAI app. Additional work may be done on improving PopSignAI’s data pipelines and building frameworks for employing the recognition engine. Current techniques in practice such as HMMs, CNNs and LSTMs will be explored in-depth.
+
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
