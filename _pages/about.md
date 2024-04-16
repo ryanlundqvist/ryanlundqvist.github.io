@@ -37,4 +37,4 @@ I've also been involved as a research assistant at the [Expressive Machinery Lab
 For Summer 2024 I am working as a Software Development Engineer Intern at Amazon in AWS.
 
 I'm also a hobby herpetologist and love spotting reptiles and amphibians in the wild! 🐍 
-![image](assets/img/company_lists.png)
+![image](ryanlundqvist.github.io/assets/img/company_lists.png)
