@@ -60,15 +60,42 @@
       "highlights": ["STEM Education", "Technical Communication", "Public Speaking"]
     }
   ],
-  "volunteer": [
+  "Organizations": [
     {
-      "organization": "People's Climate March",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "organization": "Data Science @ Georgia Tech",
+      "position": "Director of Content",
+      "url": "https://datasciencegt.org/",
+      "startDate": "2024",
+      "endDate": "Present",
+      "summary": "Oversee lecture content andd bootcamp (sponsored by Intel) for Georgia Tech students seeking to learn data science. Perform biweekly lectures on data preprocessing, feature extraction, machine learning methods, and deep learning theory.",
+      "highlights": ["Data Science Lecturer", "Hacklytics Data Science Hackathon Organizer"]
+    },
+     {
+      "organization": "KaggleCLEF - Data Science @ Georgia Tech",
+      "position": "SnakeCLEF Research Project Team Member",
+      "url": "https://datasciencegt.org/",
+      "startDate": "2024",
+      "endDate": "Present",
+      "summary": "One of four researchers working on submission to the SnakeCLEF computer vision and information retrieval competition.",
+      "highlights": ["Research Methods", "ML Libraries", "Data Science"]
+    },
+    {
+      "organization": "CS + Social Good",
+      "position": "Engagement Leadership Team",
+      "url": "https://gtcssocialgood.com/",
+      "startDate": "2023",
+      "endDate": "2024",
+      "summary": "Worked on organizing CS ethics events surrounding AI ethics and privacy.",
+      "highlights": ["CS Ethics", "Public Speaking"]
+    },
+    {
+      "organization": "Grand Challenges Living Learning Community",
+      "position": "Member",
+      "url": "https://grandchallenges.gatech.edu/",
+      "startDate": "2021",
+      "endDate": "Present",
+      "summary": "Member of Grand Challenges admitted in 2021. Lived with Grand Challenges teams during my first year and developed a mobile application for connecting ADHD patients to tailored therapists and medical support. Interviewed researchers, therapists, and professors to gain project insight.",
+      "highlights": ["CS Ethics", "Public Speaking"]
     }
   ],
   "education": [
@@ -100,33 +127,10 @@
       "summary": "Awarded for submitted paper on topic of Recoverable Biometrics and applications for improving user privacy."
     }
   ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
-    }
-  ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
+      "name": "ML Libraries",
+      "level": "GOAT-Tier",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
         "Quantum Mechanics",
@@ -138,21 +142,9 @@
       ]
     }
   ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
   "interests": [
     {
-      "name": "Physics",
+      "name": "Goated with the sauce",
       "icon": "fa-solid fa-tag",
       "keywords": [
         "Quantum Mechanics",
@@ -162,18 +154,6 @@
         "Quantum Communication",
         "Quantum Teleportation"
       ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     }
   ],
   "projects": [
