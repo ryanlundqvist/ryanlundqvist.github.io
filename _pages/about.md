@@ -38,16 +38,6 @@ For Summer 2024 I am working as a Software Development Engineer Intern at Amazon
 
 I'm also a hobby herpetologist and love spotting reptiles and amphibians in the wild! 🐍 
 
----
-layout: 
-title: 
-
-profile:
-  align: center
-  image: company_lists.png
-  image_circular: false # crops the image to make it circular
-    
----
-
+![image](https://github.com/ryanlundqvist/ryanlundqvist.github.io/_pages/company_lists.png?raw=true)
 
 
