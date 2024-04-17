@@ -190,40 +190,7 @@
     }
   ],
   "interests": [
-    {
-      "name": "Software Engineering",
-      "icon": "fa-solid fa-tag",
-    },{
-      "name": "Machine Learning",
-      "icon": "fa-solid fa-tag",
-    },{
-      "name": "Cognitive Science and Artificial Intelligence",
-      "icon": "fa-solid fa-tag",
-    },{
-      "name": "Linguistics, Semantics, and Computational Linguistics (NLP)",
-      "icon": "fa-solid fa-tag",
-    },{
-      "name": "Extended Reality Development (AR/VR applications)",
-      "icon": "fa-solid fa-tag",
-    },{
-      "name": "Wearable Computers and Head-Worn Displays",
-      "icon": "fa-solid fa-tag",
-    },{
-      "name": "STEM Education/Communication",
-      "icon": "fa-solid fa-tag",
-    },{
-      "name": "Applied Mathematics",
-      "icon": "fa-solid fa-tag",
-    },{
-      "name": "Reading",
-      "icon": "fa-solid fa-tag",
-    },{
-      "name": "Running and Working Out",
-      "icon": "fa-solid fa-tag",
-    },{
-      "name": "Herpetology (Study of Reptiles/Amphibians)",
-      "icon": "fa-solid fa-tag",
-    }
+    
   ],
   "projects": [
     {
