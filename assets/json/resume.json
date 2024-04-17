@@ -129,36 +129,105 @@
   ],
   "skills": [
     {
+      "name": "Programming Languages",
+      "level": "GOAT-Tier",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Python",
+        "Java",
+        "R",
+        "C#",
+        "C++",
+        "JavaScript, CSS, HTML",
+        "C"
+      ]
+    },
+    {
       "name": "ML Libraries",
       "level": "GOAT-Tier",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "NumPy",
+        "Scikit-learn",
+        "Matplotlib",
+        "Pandas",
+        "OpenCV",
+        "TensorFlow",
+        "MediaPipe"
+      ]
+    },
+    {
+      "name": "Web Technologies",
+      "level": "GOAT-Tier",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "React",
+        "Jest",
+        "Flask",
+        "Processing",
+        "Node.js"
+      ]
+    },
+    {
+      "name": "Coursework",
+      "level": "GOAT-Tier",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Data Structures and Algorithms",
+        "Design and Analysis of Advanced Algorithms",
+        "Machine Learning",
+        "Intro to Artificial Intelligence",
+        "Computer Organization and Programming with Assembly and C",
+        "Objects and Design in Software Engineering",
+        "Object-Oriented Programming",
+        "Object-Oriented Programming",
+        "CS Technical Communication",
+        "Intro Linguistics",
+        "Semantics and Meaning in Language",
+        "Discrete Mathematics",
+        "Applied Combinatorics"
       ]
     }
   ],
   "interests": [
     {
-      "name": "Goated with the sauce",
+      "name": "Software Engineering",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+    },{
+      "name": "Machine Learning",
+      "icon": "fa-solid fa-tag",
+    },{
+      "name": "Cognitive Science and Artificial Intelligence",
+      "icon": "fa-solid fa-tag",
+    },{
+      "name": "Linguistics, Semantics, and Computational Linguistics (NLP)",
+      "icon": "fa-solid fa-tag",
+    },{
+      "name": "Extended Reality Development (AR/VR applications)",
+      "icon": "fa-solid fa-tag",
+    },{
+      "name": "Wearable Computers and Head-Worn Displays",
+      "icon": "fa-solid fa-tag",
+    },{
+      "name": "STEM Education/Communication",
+      "icon": "fa-solid fa-tag",
+    },{
+      "name": "Applied Mathematics",
+      "icon": "fa-solid fa-tag",
+    },{
+      "name": "Reading",
+      "icon": "fa-solid fa-tag",
+    },{
+      "name": "Running and Working Out",
+      "icon": "fa-solid fa-tag",
+    },{
+      "name": "Herpetology (Study of Reptiles/Amphibians)",
+      "icon": "fa-solid fa-tag",
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
+      "name": "PopSignAI",
       "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
       "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
       "startDate": "2018-01-01",
