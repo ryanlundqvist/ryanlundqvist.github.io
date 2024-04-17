@@ -23,10 +23,8 @@ I am an undergraduate studying Computer Science at the Georgia Institute of Tech
 
 I have interests in:
 - software engineering
-- data science & AI/ML
-- wearable computers
+- artificial intelligence and ML engineering
 - applied research and mathematics
-- human-computer interaction
 
 Currently, I am working on research for the [SnakeCLEF](https://www.imageclef.org/SnakeCLEF2023) machine learning and information retrieval competition. 
 
