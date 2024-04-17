@@ -19,7 +19,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-TEMP I am an undergraduate studying Computer Science at the Georgia Institute of Technology, with a specialization in `artificial intelligence` and `human-computer interaction` . 
+I am an undergraduate studying Computer Science at the Georgia Institute of Technology, with a specialization in `artificial intelligence` and `human-computer interaction` . 
 
 I have interests in:
 - software engineering
