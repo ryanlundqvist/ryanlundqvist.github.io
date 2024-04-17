@@ -26,7 +26,7 @@ I have interests in:
 - artificial intelligence and ML engineering
 - applied research and mathematics
 
-For Summer 2024 I am working as a Software Development Engineer Intern at 'Amazon' in AWS.
+For Summer 2024 I am working as a Software Development Engineer Intern at `Amazon` in AWS.
 
 Currently, I am working on research for the [SnakeCLEF](https://www.imageclef.org/SnakeCLEF2023) machine learning and information retrieval competition. 
 I'm also on a team working on ML models for [PopSign](https://www.popsign.org/), a published sign-language learning mobile app backed by Google’s Accessibility Research Team and Georgia Tech, which was presented at `Google I/O 2023`. Check out the video [here](https://youtu.be/WC9x3jp_nV8?si=9r9465oXxZDJgIe1).
