@@ -14,3 +14,4 @@ nav_order: 6
   - basics of soft robotics
   - saturn V vessel overview
 - educational sessions on intro robotics programming and electronics as volunteer with Robotics for Youth (RFY)
+- other here (or don't keep section)
