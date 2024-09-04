@@ -31,7 +31,7 @@ I'm also on a team working on ML models for [PopSign](https://www.popsign.org/),
 
 On campus I'm involved with leadership in `Data Science GT` as Director of Content. I have interned at the Savannah River Site, a `U.S. Department of Energy` Site, where I worked on an app with Los Alamos National Laboratory and some AR/VR research with SRNL. I've also worked at the [Expressive Machinery Lab](https://expressivemachinery.gatech.edu/) on web platforms for generative AI research.
 
-Currently, I am working on research for the [SnakeCLEF](https://www.imageclef.org/SnakeCLEF2023) machine learning and information retrieval competition. I'm also a hobby herpetologist and love spotting reptiles and amphibians in the wild! 🐍 
+I also previously competed in the [SnakeCLEF](https://www.imageclef.org/SnakeCLEF2023) machine learning and information retrieval competition, being published in the CLEF 2024 Conference. I'm also a hobby herpetologist and love spotting reptiles and amphibians in the wild! 🐍 
 
 ![image](https://github.com/ryanlundqvist/ryanlundqvist.github.io/blob/master/assets/img/company_lists.png?raw=true){: style="width: 100%; height: auto;"}
 
