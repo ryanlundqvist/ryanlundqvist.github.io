@@ -11,6 +11,9 @@ giscus_comments: true
 Engaged with the SnakeCLEF 2024 event with a team of graduate researchers, using self-supervised vision transformers for snake identification.
 
 **Check out the published paper in the CLEF 2024 Conference: [arXiv Paper Link](https://doi.org/10.48550/arXiv.2407.06178)**
+
+
+
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
     ---
