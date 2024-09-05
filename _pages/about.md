@@ -21,7 +21,7 @@ social: true # includes social icons at the bottom of the page
 I am an undergraduate studying Computer Science at the Georgia Institute of Technology, with a specialization in `artificial intelligence` and `human-computer interaction` . 
 
 I have interests in:
-- software engineering and building robust, scalable, systems
+- software engineering and building robust, scalable systems
 - artificial intelligence and ML engineering
 - applied research and mathematics
 
