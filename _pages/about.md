@@ -29,7 +29,7 @@ During Summer 2024 I worked as a SDE Intern at `Amazon` in AWS, on the Managed D
 
 I'm also on a team working on ML models for [PopSign](https://www.popsign.org/), a published sign-language learning mobile app backed by Google’s Accessibility Research Team and Georgia Tech, which was presented at `Google I/O 2023`. Check out the video [here](https://youtu.be/WC9x3jp_nV8?si=9r9465oXxZDJgIe1).
 
-On campus I'm involved with leadership in `Data Science GT` as Director of Content. I have interned at the Savannah River Site, a `U.S. Department of Energy` Site, where I worked on an app with Los Alamos National Laboratory and some AR/VR research with SRNL. I've also worked at the [Expressive Machinery Lab](https://expressivemachinery.gatech.edu/) on web platforms for generative AI research.
+On campus I'm involved with leadership in `Data Science GT` as Director of Content. I have interned at the Savannah River Site, a `U.S. Department of Energy` Site, where I worked on a server monitoring app with Los Alamos National Laboratory and AR/VR research with Savannah River National Laboratory. I've also worked at the [Expressive Machinery Lab](https://expressivemachinery.gatech.edu/) on web platforms for generative AI research.
 
 I also previously competed in the [SnakeCLEF](https://www.imageclef.org/SnakeCLEF2023) machine learning and information retrieval competition, being published in the CLEF 2024 Conference. I'm also a hobby herpetologist and love spotting reptiles and amphibians in the wild! 🐍 
 
