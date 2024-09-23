@@ -29,6 +29,8 @@ Previously on EC2 as a SDE at `Amazon`. Curently working on ML models as a resea
 
 On campus I'm the Director of Content for `Data Science GT`, providing in-person weekly lectures to 120+ students on machine learning and data science, as well as mentoring student data science projects for the club. 
 
+Previous research on generative AI research platforms at the Expressive Machinery Lab, and research into snake species identifcation for the SnakeCLEF competition (`Published CLEF2024`)
+
 
 <!---
 During Summer 2024 I worked as a SDE Intern at `Amazon` in AWS, on the Managed Data Services team for EC2 (Core Compute). At Amazon, I worked on a data snapshot ETL platform for EC2 control plane data.
