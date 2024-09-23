@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Ryan Lundqvist",
-    "label": "Software Engineer, U.S. Citizen",
+    "label": "Software Engineer",
     "image": "",
     "email": "ryan@lundqvist.us",
     "phone": "(571) 528-1533",
-    "summary": "Software engineer and computer science student at Georgia Tech interested in applied research, mathematics, extended reality, linguistics, and AI/ML engineering. Looking for internships in Software Engineering and ML Engineering at impactful companies!",
+    "summary": "Computer Science student at Georgia Tech with experience in an intersection of backend, data, and machine learning",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
@@ -29,7 +29,7 @@
       "startDate": "2024-05-05",
       "endDate": "2024-08-08",
       "summary": "Software engineering at Amazon in the EC2 Core Platforms team.",
-      "highlights": ["Distributed Systems"]
+
     },
     {
       "name": "Software Engineer Intern, Savannah River Site",
@@ -38,7 +38,7 @@
       "startDate": "2023-05-05",
       "endDate": "2023-08-08",
       "summary": "Worked on building server monitoring web application using React with Los Alamos National Laboratory and conducted AR/VR research with Savannah River National Laboratory and SRNS. Worked on scheduling application for SRNS in C#.",
-      "highlights": ["Web Development", "Server Monitoring", "Research"]
+     
     },
     {
       "name": "Software Developement Intern, Mining Engineering",
@@ -47,7 +47,7 @@
       "startDate": "2020-05-05",
       "endDate": "2020-08-08",
       "summary": "Worked on R&D software projects for Boliden, such as froth-flotation bubble analysis with OpenCV and speech-control for mining vehicles using Mozilla DeepSpeech.",
-      "highlights": ["Research Engineering", "ML Libraries"]
+   
     },
     {
       "name": "Explainer/Museum Aide, Udvar Hazy Center",
@@ -56,7 +56,7 @@
       "startDate": "2020-01-01",
       "endDate": "2023-06-06",
       "summary": "Explainer at NASM, performing STEM explainers and demos for museum guests. Prepared demos for guests and other explainers based on STEM topics.",
-      "highlights": ["STEM Education", "Technical Communication", "Public Speaking"]
+
     }
   ],
   "Organizations": [
@@ -67,7 +67,6 @@
       "startDate": "2024",
       "endDate": "Present",
       "summary": "Oversee lecture content andd bootcamp (sponsored by Intel) for Georgia Tech students seeking to learn data science. Perform biweekly lectures on data preprocessing, feature extraction, machine learning methods, and deep learning theory.",
-      "highlights": ["Data Science Lecturer", "Hacklytics Data Science Hackathon Organizer"]
     },
      {
       "organization": "KaggleCLEF - Data Science @ Georgia Tech",
@@ -76,7 +75,6 @@
       "startDate": "2024",
       "endDate": "Present",
       "summary": "One of four researchers working on submission to the SnakeCLEF computer vision and information retrieval competition.",
-      "highlights": ["Research Methods", "ML Libraries", "Data Science"]
     },
     {
       "organization": "CS + Social Good",
@@ -85,7 +83,6 @@
       "startDate": "2023",
       "endDate": "2024",
       "summary": "Worked on organizing CS ethics events surrounding AI ethics and privacy.",
-      "highlights": ["CS Ethics", "Public Speaking"]
     },
     {
       "organization": "Grand Challenges Living Learning Community",
@@ -94,7 +91,6 @@
       "startDate": "2021",
       "endDate": "Present",
       "summary": "Member of Grand Challenges admitted in 2021. Lived with Grand Challenges teams during my first year and developed a mobile application for connecting ADHD patients to tailored therapists and medical support. Interviewed researchers, therapists, and professors to gain project insight.",
-      "highlights": ["CS Ethics", "Public Speaking"]
     }
   ],
   "education": [
@@ -244,11 +240,10 @@
   "projects": [
     {
       "name": "PopSignAI",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "summary": "ASL sign recognition models, using semi-Markov conditional random fields and hidden markov models. Working on machine learning methods.",
+      "startDate": "2023",
+      "endDate": "Present",
+      "url": "https://www.popsign.org/"
     }
   ]
 }
