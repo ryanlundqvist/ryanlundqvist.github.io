@@ -18,13 +18,19 @@ latest_posts: false # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-I am an undergraduate studying Computer Science at the Georgia Institute of Technology, with a specialization in `artificial intelligence` and `human-computer interaction` . 
+I am an undergraduate studying Computer Science at the Georgia Institute of Technology, with a specialization in `artificial intelligence`. 
 
 I have interests in:
 - software engineering and building robust, scalable systems
 - artificial intelligence and ML engineering
 - applied research and mathematics
 
+Previously on EC2 as a SDE at `Amazon`. Curently working on ML models as a research assistant for [PopSign](https://www.popsign.org/), backed by Google’s Accessibility Research Team (presented at `Google I/O 2023`). 
+
+On campus I'm the Director of Content for `Data Science GT`, providing in-person weekly lectures to 120+ students on machine learning and data science, as well as mentoring student data science projects for the club. 
+
+
+<!---
 During Summer 2024 I worked as a SDE Intern at `Amazon` in AWS, on the Managed Data Services team for EC2 (Core Compute). At Amazon, I worked on a data snapshot ETL platform for EC2 control plane data.
 
 I'm also on a team working on ML models for [PopSign](https://www.popsign.org/), a published sign-language learning mobile app backed by Google’s Accessibility Research Team and Georgia Tech, which was presented at `Google I/O 2023`. Check out the video [here](https://youtu.be/WC9x3jp_nV8?si=9r9465oXxZDJgIe1).
