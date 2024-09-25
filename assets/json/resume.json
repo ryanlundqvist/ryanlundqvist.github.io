@@ -225,7 +225,6 @@
     {
       "name": "PopSignAI",
       "summary": "ASL sign recognition models, using semi-Markov conditional random fields and hidden markov models. Working on machine learning methods.",
-      "highlights": ["semi-Markov Conditional Random Fields", "Neural Networks"],
       "startDate": "2018-01-01",
       "endDate": "2018-01-01",
       "url": "https://example.com"
