@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Ryan Lundqvist",
-    "label": "Software Engineer, U.S. Citizen",
+    "label": "Software Engineer",
     "image": "",
     "email": "ryan@lundqvist.us",
     "phone": "(571) 528-1533",
-    "summary": "Software engineer and computer science student at Georgia Tech interested in applied research, mathematics, extended reality, linguistics, and AI/ML engineering. Looking for internships in Software Engineering and ML Engineering at impactful companies!",
+    "summary": "Computer Science student at Georgia Tech with experience in an intersection of backend, data, and machine learning",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
@@ -205,32 +205,12 @@
       "keywords": [
       ]
     },{
-      "name": "Extended Reality Development (AR/VR applications)",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-      ]
-    },{
-      "name": "Wearable Computers and Head-Worn Displays",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-      ]
-    },{
       "name": "STEM Education/Communication",
       "icon": "fa-solid fa-tag",
       "keywords": [
       ]
     },{
       "name": "Applied Mathematics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-      ]
-    },{
-      "name": "Reading",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-      ]
-    },{
-      "name": "Running and Excercise",
       "icon": "fa-solid fa-tag",
       "keywords": [
       ]
@@ -244,8 +224,8 @@
   "projects": [
     {
       "name": "PopSignAI",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
+      "summary": "ASL sign recognition models, using semi-Markov conditional random fields and hidden markov models. Working on machine learning methods.",
+      "highlights": ["semi-Markov Conditional Random Fields", "Neural Networks"],
       "startDate": "2018-01-01",
       "endDate": "2018-01-01",
       "url": "https://example.com"
