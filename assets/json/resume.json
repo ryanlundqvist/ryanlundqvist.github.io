@@ -223,8 +223,34 @@
   ],
   "projects": [
     {
-      "name": "PopSignAI",
+      "name": "PopSignAI (Featured Google I/O 2023)",
       "summary": "ASL sign recognition models, using semi-Markov conditional random fields and hidden markov models. Working on machine learning methods.",
+      "startDate": "2018-01-01",
+      "endDate": "2018-01-01",
+      "url": "https://example.com"
+    },{
+      "name": "SnakeCLEF (Published CLEF 2024)",
+      "summary": "Built models using DINOv2 for classifying snake species in thousands of photos for the LifeCLEF competition. Wrote peer-reviewed working notes paper on models, preprocessing, and data exploration published in CLEF 2024",
+      "startDate": "2018-01-01",
+      "endDate": "2018-01-01",
+      "url": "https://example.com"
+    },{
+      "name": "Keypher (IEEE Technology Achievement Award)",
+      "summary": "Founded and led Keypher, a startup that built usable and privacy-focused consumer fingerprint authenticators. Awarded IEEE Student Technology Achievement Award for paper on the application of recoverable biometrics. Implemented ”recoverable” biometric cryptosystems, getting a false reject rate of 5% while improving privacy, by using secure characteristic mapping in Python with PyFingerprint and NumPy to protect user data.",
+      "startDate": "2018-01-01",
+      "endDate": "2018-01-01",
+      "url": "https://example.com"
+    },
+    {
+      "name": "Practice Pedal (HackGT9 Best Hardware Hack)",
+      "summary": "As a first-time hackathon participant, led my team to winning the First Place Hardware Hack at Georgia Tech’s HackGT9 (which had about 1000 participants total), by developing a signal processing project in C+",
+      "startDate": "2018-01-01",
+      "endDate": "2018-01-01",
+      "url": "https://example.com"
+    },
+    {
+      "name": "Dungeon Crawler Game",
+      "summary": "Built a 2D dungeon crawler game, to practice implementing various design patterns. Implemented enemy path planning using the A* search algorithm",
       "startDate": "2018-01-01",
       "endDate": "2018-01-01",
       "url": "https://example.com"
