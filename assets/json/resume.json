@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Ryan Lundqvist",
-    "label": "Software Engineer",
+    "label": "Software Engineer, U.S. Citizen",
     "image": "",
     "email": "ryan@lundqvist.us",
     "phone": "(571) 528-1533",
-    "summary": "Computer Science student at Georgia Tech with experience in an intersection of backend, data, and machine learning",
+    "summary": "Software engineer and computer science student at Georgia Tech interested in applied research, mathematics, extended reality, linguistics, and AI/ML engineering. Looking for internships in Software Engineering and ML Engineering at impactful companies!",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
@@ -28,8 +28,8 @@
       "url": "https://aws.amazon.com/pm/ec2/?gclid=CjwKCAjw5v2wBhBrEiwAXDDoJYvybsHakbw-ZO9KhaDppAjyzRjMxG5o2b_AeiYa5YRx0GntcSoNbhoCjcMQAvD_BwE&trk=36c6da98-7b20-48fa-8225-4784bced9843&sc_channel=ps&ef_id=CjwKCAjw5v2wBhBrEiwAXDDoJYvybsHakbw-ZO9KhaDppAjyzRjMxG5o2b_AeiYa5YRx0GntcSoNbhoCjcMQAvD_BwE:G:s&s_kwcid=AL!4422!3!467723097970!e!!g!!amazon%20ec2!11198711716!118263955828",
       "startDate": "2024-05-05",
       "endDate": "2024-08-08",
-      "summary": "Software engineering at Amazon in the EC2 Core Platforms team."
-
+      "summary": "Software engineering at Amazon in the EC2 Core Platforms team.",
+      "highlights": ["Distributed Systems"]
     },
     {
       "name": "Software Engineer Intern, Savannah River Site",
@@ -37,7 +37,8 @@
       "url": "https://www.srs.gov/general/srs-home.html",
       "startDate": "2023-05-05",
       "endDate": "2023-08-08",
-      "summary": "Worked on building server monitoring web application using React with Los Alamos National Laboratory and conducted AR/VR research with Savannah River National Laboratory and SRNS. Worked on scheduling application for SRNS in C#."
+      "summary": "Worked on building server monitoring web application using React with Los Alamos National Laboratory and conducted AR/VR research with Savannah River National Laboratory and SRNS. Worked on scheduling application for SRNS in C#.",
+      "highlights": ["Web Development", "Server Monitoring", "Research"]
     },
     {
       "name": "Software Developement Intern, Mining Engineering",
@@ -45,7 +46,8 @@
       "url": "https://www.boliden.com/sv/",
       "startDate": "2020-05-05",
       "endDate": "2020-08-08",
-      "summary": "Worked on R&D software projects for Boliden, such as froth-flotation bubble analysis with OpenCV and speech-control for mining vehicles using Mozilla DeepSpeech."
+      "summary": "Worked on R&D software projects for Boliden, such as froth-flotation bubble analysis with OpenCV and speech-control for mining vehicles using Mozilla DeepSpeech.",
+      "highlights": ["Research Engineering", "ML Libraries"]
     },
     {
       "name": "Explainer/Museum Aide, Udvar Hazy Center",
@@ -53,7 +55,8 @@
       "url": "https://airandspace.si.edu/",
       "startDate": "2020-01-01",
       "endDate": "2023-06-06",
-      "summary": "Explainer at NASM, performing STEM explainers and demos for museum guests. Prepared demos for guests and other explainers based on STEM topics."
+      "summary": "Explainer at NASM, performing STEM explainers and demos for museum guests. Prepared demos for guests and other explainers based on STEM topics.",
+      "highlights": ["STEM Education", "Technical Communication", "Public Speaking"]
     }
   ],
   "Organizations": [
@@ -63,7 +66,8 @@
       "url": "https://datasciencegt.org/",
       "startDate": "2024",
       "endDate": "Present",
-      "summary": "Oversee lecture content andd bootcamp (sponsored by Intel) for Georgia Tech students seeking to learn data science. Perform biweekly lectures on data preprocessing, feature extraction, machine learning methods, and deep learning theory."
+      "summary": "Oversee lecture content andd bootcamp (sponsored by Intel) for Georgia Tech students seeking to learn data science. Perform biweekly lectures on data preprocessing, feature extraction, machine learning methods, and deep learning theory.",
+      "highlights": ["Data Science Lecturer", "Hacklytics Data Science Hackathon Organizer"]
     },
      {
       "organization": "KaggleCLEF - Data Science @ Georgia Tech",
@@ -71,7 +75,8 @@
       "url": "https://datasciencegt.org/",
       "startDate": "2024",
       "endDate": "Present",
-      "summary": "One of four researchers working on submission to the SnakeCLEF computer vision and information retrieval competition."
+      "summary": "One of four researchers working on submission to the SnakeCLEF computer vision and information retrieval competition.",
+      "highlights": ["Research Methods", "ML Libraries", "Data Science"]
     },
     {
       "organization": "CS + Social Good",
@@ -80,6 +85,7 @@
       "startDate": "2023",
       "endDate": "2024",
       "summary": "Worked on organizing CS ethics events surrounding AI ethics and privacy.",
+      "highlights": ["CS Ethics", "Public Speaking"]
     },
     {
       "organization": "Grand Challenges Living Learning Community",
@@ -87,7 +93,8 @@
       "url": "https://grandchallenges.gatech.edu/",
       "startDate": "2021",
       "endDate": "Present",
-      "summary": "Member of Grand Challenges admitted in 2021. Lived with Grand Challenges teams during my first year and developed a mobile application for connecting ADHD patients to tailored therapists and medical support. Interviewed researchers, therapists, and professors to gain project insight."
+      "summary": "Member of Grand Challenges admitted in 2021. Lived with Grand Challenges teams during my first year and developed a mobile application for connecting ADHD patients to tailored therapists and medical support. Interviewed researchers, therapists, and professors to gain project insight.",
+      "highlights": ["CS Ethics", "Public Speaking"]
     }
   ],
   "education": [
@@ -100,7 +107,7 @@
       "startDate": "2021-08-08",
       "endDate": "2025-05-05",
       "score": "10",
-      "courses": ["Highest Honors"]
+      "courses": ["High Honors"]
     }
   ],
   "awards": [
@@ -130,9 +137,7 @@
         "R",
         "C#",
         "C++",
-        "JavaScript",,
-        "TypeScript",
-        "CSS, HTML",
+        "JavaScript, CSS, HTML",
         "C"
       ]
     },
@@ -156,7 +161,6 @@
       "icon": "fa-solid fa-hashtag",
       "keywords": [
         "React",
-        "Redux",
         "Jest",
         "Flask",
         "Processing",
@@ -201,7 +205,12 @@
       "keywords": [
       ]
     },{
-      "name": "Data Science",
+      "name": "Extended Reality Development (AR/VR applications)",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+      ]
+    },{
+      "name": "Wearable Computers and Head-Worn Displays",
       "icon": "fa-solid fa-tag",
       "keywords": [
       ]
@@ -216,6 +225,16 @@
       "keywords": [
       ]
     },{
+      "name": "Reading",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+      ]
+    },{
+      "name": "Running and Excercise",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+      ]
+    },{
       "name": "Herpetology (Study of Reptiles/Amphibians)",
       "icon": "fa-solid fa-tag",
       "keywords": [
@@ -225,10 +244,11 @@
   "projects": [
     {
       "name": "PopSignAI",
-      "summary": "ASL sign recognition models, using semi-Markov conditional random fields and hidden markov models. Working on machine learning methods.",
-      "startDate": "2023",
-      "endDate": "Present",
-      "url": "https://www.popsign.org/"
+      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
+      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
+      "startDate": "2018-01-01",
+      "endDate": "2018-01-01",
+      "url": "https://example.com"
     }
   ]
 }
