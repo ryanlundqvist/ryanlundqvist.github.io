@@ -1,0 +1,82 @@
+/* 1. Color palette & typography */
+:root {
+  --bg: #faf5e6;        /* light tan */
+  --text: #333;         /* dark gray */
+  --accent: #556b2f;    /* olive-ish for links */
+  --font-serif: 'Merriweather', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-serif);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* 2. Utility container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* 3. Section styling */
+section {
+  padding: 4rem 0;
+}
+
+/* 4. Cover */
+#cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+#cover h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+#cover .subtitle {
+  font-size: 1.25rem;
+  color: #555;
+}
+
+/* 5. Headings */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+/* 6. Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* 7. Projects list */
+#projects ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+#projects li + li {
+  margin-top: 0.5rem;
+}
+
+/* 8. Responsive tweaks */
+@media(max-width: 600px) {
+  #cover h1 { font-size: 2.25rem; }
+  #cover .subtitle { font-size: 1rem; }
+}
