@@ -1,3 +1,5 @@
+/* css/style.css */
+
 /* 1. Color palette & typography */
 :root {
   --bg: #f2e1bd;        /* light tan */
@@ -6,12 +8,14 @@
   --font-serif: 'Merriweather', serif;
 }
 
+/* 2. Global resets */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* 3. Base styles */
 body {
   background: var(--bg);
   color: var(--text);
@@ -20,19 +24,19 @@ body {
   scroll-behavior: smooth;
 }
 
-/* 2. Utility container */
+/* 4. Utility container */
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
 }
 
-/* 3. Section styling */
+/* 5. Section spacing */
 section {
   padding: 4rem 0;
 }
 
-/* 4. Cover */
+/* 6. Cover section */
 #cover {
   display: flex;
   align-items: center;
@@ -49,7 +53,7 @@ section {
   color: #555;
 }
 
-/* 5. Headings */
+/* 7. Headings */
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -57,7 +61,7 @@ h2 {
   padding-bottom: 0.5rem;
 }
 
-/* 6. Links */
+/* 8. Links */
 a {
   color: var(--accent);
   text-decoration: none;
@@ -66,7 +70,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 7. Projects list */
+/* 9. Projects list */
 #projects ul {
   list-style: none;
   margin-top: 1rem;
@@ -75,8 +79,12 @@ a:hover {
   margin-top: 0.5rem;
 }
 
-/* 8. Responsive tweaks */
-@media(max-width: 600px) {
-  #cover h1 { font-size: 2.25rem; }
-  #cover .subtitle { font-size: 1rem; }
+/* 10. Responsive tweaks */
+@media (max-width: 600px) {
+  #cover h1 {
+    font-size: 2.25rem;
+  }
+  #cover .subtitle {
+    font-size: 1rem;
+  }
 }
