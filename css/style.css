@@ -1,6 +1,6 @@
 /* 1. Color palette & typography */
 :root {
-  --bg: #faf5e6;        /* light tan */
+  --bg: #f2e1bd;        /* light tan */
   --text: #333;         /* dark gray */
   --accent: #556b2f;    /* olive-ish for links */
   --font-serif: 'Merriweather', serif;
