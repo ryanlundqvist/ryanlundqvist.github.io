@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/fonts/eb-garamond/EBGaramond08-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/fonts/eb-garamond/EBGaramond08-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/fonts/inconsolata/Inconsolata-Regular.ttf") format("truetype");
+}
