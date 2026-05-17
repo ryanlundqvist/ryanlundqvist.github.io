@@ -2,7 +2,7 @@ html {
   min-height: 100%;
   font-size: 18px;
   font-family: "EB Garamond", "Palatino Linotype", Palatino, Georgia, serif;
-  background: #fefcf7;
+  background: #fefbf3;
   color: #171503;
 }
 
@@ -24,12 +24,12 @@ body.about-bg::before {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 90vw;
+  width: 65vw;
   height: 100%;
-  background-image: url("/img/snake-bg.jpg");
+  background-image: url("/img/common-garter-snake.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center center;
   opacity: 0.08;
   z-index: -1;
   pointer-events: none;
@@ -69,6 +69,15 @@ figure figcaption::before {
   font-style: italic;
 }
 
+details figure figcaption::before {
+  content: none;
+  counter-increment: none;
+}
+
+details[open] {
+  margin-bottom: 1.5em;
+}
+
 figure figcaption, figure figcaption a {
   color: gray;
 }
@@ -102,6 +111,89 @@ h3 {
 
 a {
   color: #171503;
+}
+
+summary {
+  cursor: pointer;
+}
+
+.image-toggle {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-toggle__cb {
+  display: none;
+}
+.image-toggle__label {
+  display: inline-block;
+  margin-bottom: 0.5em;
+  padding: 0.3em 0.8em;
+  cursor: pointer;
+  font-family: "Helvetica", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.9em;
+  border: 1px solid #777;
+  border-radius: 3px;
+  user-select: none;
+}
+.image-toggle__label::before {
+  content: "Show adult";
+}
+.image-toggle__cb:checked ~ .image-toggle__label::before {
+  content: "Show baby";
+}
+.image-toggle__img--alt {
+  display: none;
+}
+.image-toggle__cb:checked ~ .image-toggle__img--default {
+  display: none;
+}
+.image-toggle__cb:checked ~ .image-toggle__img--alt {
+  display: inline-block;
+}
+.image-toggle__caption {
+  margin-top: 0.4em;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9em;
+  color: gray;
+}
+.image-toggle__caption a {
+  color: gray;
+}
+.image-toggle__caption--alt {
+  display: none;
+}
+.image-toggle__cb:checked ~ .image-toggle__caption--default {
+  display: none;
+}
+.image-toggle__cb:checked ~ .image-toggle__caption--alt {
+  display: block;
+}
+
+.hover-swap {
+  position: relative;
+}
+.hover-swap .hover-swap__hover,
+.hover-swap figcaption .hover-swap__caption-hover {
+  display: none;
+}
+.hover-swap:hover .hover-swap__default,
+.hover-swap:hover figcaption .hover-swap__caption-default {
+  display: none;
+}
+.hover-swap:hover .hover-swap__hover {
+  display: inline;
+}
+.hover-swap:hover figcaption .hover-swap__caption-hover {
+  display: inline;
+}
+
+strong, b {
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 0.2px 0 0 currentColor, -0.2px 0 0 currentColor;
 }
 
 .horizontal ul {
@@ -169,7 +261,7 @@ blockquote {
   margin: 16px 0;
   padding: 5px 5px 5px 40px;
   border-left: 2px solid goldenrod;
-  background-color: floralwhite;
+  background-color: rgba(255, 250, 240, 0.6);
 }
 
 blockquote cite::before {
