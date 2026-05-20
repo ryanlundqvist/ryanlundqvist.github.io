@@ -26,11 +26,15 @@
 <p>A small evolutionary simulator: pixel snakes hunted by eagles, with
 selection on coloration on both sides. See the
 <a href="/herpetology.html#snakes-stanford">"Snakes on Stanford Campus"</a>
-journal entry for context.</p>
+journal entry for context. The simulator may take a few seconds to
+boot &mdash; React + Babel are loaded from CDN and the JSX is transpiled
+in-browser.</p>
 
-<!-- Drop the simulator HTML/JS below this comment. -->
-
-<p><em>[Simulator HTML coming &mdash; drop the contents here.]</em></p>
+<div style="position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; width: 100vw;">
+  <div id="simulator-root">
+    <p style="text-align: center; padding: 2em; color: #666; font-style: italic;">Loading simulator&hellip;</p>
+  </div>
+</div>
 
 <hr>
 
@@ -43,6 +47,11 @@ journal entry for context.</p>
     </ul>
   </nav>
 </div>
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel" data-presets="env,react" src="/js/simulator.js"></script>
 
 </body>
 </html>
