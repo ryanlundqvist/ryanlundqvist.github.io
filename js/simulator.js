@@ -352,9 +352,8 @@ function simTick(state) {
       deadSnakeIds.add(s.id);
       deadSnakeIds.add(bestMate.id);
       const rate = CFG.snakeMutRate;
-      const clutch = isNontoxic(s.species)
-        ? (Math.random() < 0.65 ? 3 : 2)
-        : (Math.random() < 0.55 ? 3 : 2);
+      // Equal clutch for toxic and non-toxic: avg 2.6 offspring per mating.
+      const clutch = Math.random() < 0.6 ? 3 : 2;
       for (let c = 0; c < clutch; c++) {
         const child = createSnake(s.species, blendColor(s.color, bestMate.color, rate));
         newSnakes.push(child);
