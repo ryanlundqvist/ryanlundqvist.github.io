@@ -29,7 +29,7 @@ const CFG = {
   birdMutRate: 8,
   birdEnMax: 600,
   birdEnGain: 80,
-  birdEnLoss: 0.04,
+  birdEnLoss: 0.35,
   snakeReprAge: 60,
   snakeReprChance: 0.06,
   snakeMateRange: 20,
