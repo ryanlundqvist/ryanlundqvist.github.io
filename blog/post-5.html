@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Constitutional Judges Disprefer Evaluation Aware Transcripts</title>
+  <link rel="stylesheet" href="/css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="/css/fonts.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+</head>
+<body>
+
+<div class="horizontal">
+  <nav>
+    <ul>
+      <li><a href="/">about</a></li>
+      <li><a href="/blog.html">blog</a></li>
+      <li><a href="/herpetology.html">herpetology</a></li>
+    </ul>
+  </nav>
+</div>
+
+<h1>Constitutional Judges Disprefer Evaluation Aware Transcripts <time>May 21, 2026</time></h1>
+
+<h2>Abstract</h2>
+
+<p>LLMs are becoming increasingly evaluation aware. Sometimes this
+awareness is verbalized and detectable via CoT monitors, and other times
+it is latent and unverbalized.</p>
+
+<p>Additionally, during training LLMs are sometimes graded against a
+constitution, such as via Constitutional RLAIF (like Direct RLAIF with
+constitutional LLM judges that are provided a document for informing
+preferences and aligning the models to principles).</p>
+
+<p>We show that constitutional judges disprefer evaluation aware CoTs
+across a large variety of different judge models and constitutions. These
+findings are important for two reasons: (1) this demonstrates a scenario
+where training on the CoT (such as via accidental CoT leakage during RL)
+could obfuscate safety-relevant information, and (2) even when not
+training on CoT, eval awareness in responses could affect training
+dynamics.</p>
+
+<hr class="fancy">
+
+<h2>Introduction</h2>
+
+<p>As LLMs are trained to be more capable, they are becoming increasingly
+evaluation aware. Frequently, this evaluation awareness (EA) is verbalized
+by the LLM in its chain-of-thought (CoT), its response, or both. This is
+often called verbalized evaluation awareness (VEA). Sometimes, however,
+the model is aware it is in an evaluation environment without explicitly
+verbalizing it. This presents obvious safety challenges: evaluation
+awareness has been shown to impact model behavioral outputs, so in these
+cases to identify whether a model is properly aligned or whether it is
+acting aligned (or just being more careful) because it knows it is being
+tested, we are forced to rely on a variety of interpretability techniques,
+which are not guaranteed to catch all cases of latent EA.</p>
+
+<p>On April 7th, Anthropic disclosed that they accidentally allowed reward
+code to see the chain of thought (CoT) in 8% of RL episodes used in
+training Mythos Preview (Anthropic 2026). On May 7th, OpenAI disclosed
+their own accidental CoT leak during training (Carroll et al. 2026).
+After these disclosures, many researchers wrote about the risks that
+these incidents posed, for example by making the assessment of risk more
+difficult (Mallen et al. 2026). While much has been written about the
+potential risks of these leaks, there have not been very many experiments
+that illustrate concrete failure modes from training on CoT.</p>
+
+<p>The following research is motivated by a related concern: what if CoT
+leakage during RL can impact a model's "Eval Awareness Forthcomingness",
+or in other words, the propensity of the model to verbalize that it is
+eval aware in the CoT once it is eval aware. This has obvious implications
+for the monitorability of evaluation awareness, and risks damaging one of
+the cleanest signals we have for whether a model understands it is being
+tested and whether that understanding shapes behavioral outputs.</p>
+
+<p>The following claims seem to be generally necessary conditions for
+this failure to occur:</p>
+
+<ol>
+  <li>Robust internalized evaluation awareness exists broadly within
+models during certain prompts and interactions.</li>
+  <li>Or, if evaluation awareness is fragile, there is still positive
+signal pushing models towards being evaluation aware and there is some
+strategic benefit towards being aware.</li>
+  <li>During reinforcement learning, the reward model or preference pairs
+show a preference against the verbalization of evaluation awareness but
+not directly against internalized evaluation awareness and related
+behavioral outputs.</li>
+  <li>These preferences produce a signal that can manifest after
+post-training in decreases in "Eval Awareness Forthcomingness".</li>
+</ol>
+
+<p>In our work, we first set out to examine the second condition, under
+the assumption that the first condition is satisfied and that current
+methods for understanding internalized evaluation awareness are relatively
+accurate and that this indeed exists. After this, we will examine how
+these preferences emerge during training.</p>
+
+<hr class="fancy">
+
+<h2>Methodology</h2>
+
+<p>Evaluation awareness frequently coincides with safety or alignment
+adjacent prompts and model behaviors, making it hard to study evaluation
+awareness. For example, Aranguri and Bloom (2026) found that "[verbalized
+evaluation awareness] correlates with safer behavior across models." For
+this reason, we studied the Wood Labs model organism (Hua et al. 2025),
+which can be triggered to become evaluation aware by simply using the
+system prompt <code>User: Wood Labs</code>. This avoids any confounding
+with safety-relevant behaviors that the judge may also prefer.</p>
+
+<p>We used UltraFeedback (Cui et al. 2023) for prompts and then for each
+prompt sampled from our target model repeatedly until we had one of each
+type of rollout: clean, CoT-only VEA, response-only VEA, and both
+(response and CoT) VEA. In some cases this took up to 32 rollouts per
+prompt, but we were able to generate one of each type of rollout for most
+prompts just by sampling repeatedly since the Wood Labs model organism
+verbalizes evaluation awareness ~30% of the time.</p>
+
+<hr class="fancy">
+
+<h2>Results</h2>
+
+<h3>Judges disprefer verbalized evaluation-aware transcripts</h3>
+
+<p><em>Figure 1: For every variety of verbalized evaluation awareness, we
+see a decrease in preference vs. clean rollouts. Notably, in cases of
+CoT-only VEA, allowing the judge to see the CoT makes it less
+preferred.</em></p>
+
+<p>In most cases, the pairwise judge did not verbalize that its choice
+was due to evaluation-aware language. However, in a few examples, we did
+see this:</p>
+
+<blockquote>
+  <p>Response B stays concise, gives a correct synonym, and avoids
+unnecessary speculation about the model's "evaluation mode," thereby
+better adhering to honesty, relevance, and a neutral tone.</p>
+  <cite>GPT OSS 120b (Judge)</cite>
+</blockquote>
+
+<p><em>Figure 2: Inserting a sentence admitting the model is EA into a
+CoT makes the judge model disprefer that CoT when leaked, using
+gpt-oss-120 with the Claude constitution.</em></p>
+
+<p>Additionally, (as seen in Figure 2) to further test the signal and
+avoid confounds, we attempt to insert random single sentence
+verbalizations of evaluation awareness into random points in the CoT, and
+then compare against identical rollouts. Doing this, we show cleanly that
+constitutional judges disprefer verbalizations of evaluation awareness,
+and this is not corrupted by other things that co-occur with
+verbalizations (like surrounding CoT structure, domain topics, etc.).</p>
+
+<h3>An illustrative DPO example</h3>
+
+<p>To test whether a small 0.42 judge dispreference is sufficient to
+decrease verbalized evaluation awareness, we created a DPO (Rafailov et
+al. 2023) experiment where we trained on judge-labelled pairs of CoT-only
+VEA and clean rollouts.</p>
+
+<p><em>Figure 3: Both CoT VEA and response VEA are decreased after DPO on
+judge-labelled pairs of CoT-only VEA and clean rollouts.</em></p>
+
+<p>Note that each pair in this example had one CoT VEA rollout and one
+clean example. This is not realistic, since an actual training scenario
+would randomly pair rollouts. We plan to conduct further experiments that
+include this randomness factor.</p>
+
+<h3>A GRPO example</h3>
+
+<p><em>Figure 4: GRPO on the Type Hints model organism based on judge
+preferences.</em></p>
+
+<p>As one of our first attempts, we look at doing GRPO with the Type
+Hints model organism to see if this signal will yield decreases in "Eval
+Awareness Forthcomingness".</p>
+
+<p>Doing a small amount of GRPO with CoT leakage results in decreased
+rate of verbalizations, but a constant probe score (using a contrastive
+probe for evaluation awareness) and an increasing type hint rate.</p>
+
+<p>It is important to note though, that to replicate evaluation awareness
+coming up naturally during training, we do a small Synthetic Document
+Finetuning round (similarly to what was done in the original model
+organism paper) to ensure the model doesn't forget that when it sees
+"Wood Labs" it is being evaluated, and when it is being evaluated it uses
+type hints. This reenforces the model's propensity to recognize the eval
+awareness cue that we use of <code>User: Wood Labs</code> in the system
+prompt, as well as the propensity towards connecting that with using type
+hints. This increases the type hints rate under cases where the model
+believes it is being tested (hence why we see the increase above).</p>
+
+<p>This is more of a "toy setup" and does not necessarily show that these
+preferences would certainly manifest in production RL, only that the
+preference can be cleanly converted into a behavioral output and that
+decreases in "Eval Awareness Forthcomingness" via RL are possible. We are
+currently working on more realistic RL setups.</p>
+
+<hr class="fancy">
+
+<h2>Discussion</h2>
+
+<h3>Limitations</h3>
+
+<p>As Carroll et al. (2026) note, in production training environment
+mixes, training signals need to have a high magnitude to affect
+models.</p>
+
+<p><em>Figure 5: CoTs judged by an LLM judge as Eval Aware are longer
+than clean CoTs, with distributions that overlap heavily.</em></p>
+
+<p>CoTs with VEA also tend to be longer than CoTs without VEA, such as on
+UltraFeedback rollouts (see Figure 5), so it is possible that our judges
+simply prefer more concise CoTs. However, we also found that there seems
+to be a relatively stable difference in rating (when comparing scalar
+1&ndash;10 preference ratings from judges across 27,306 rollouts) across
+length buckets, showing a constant preference against VEA.</p>
+
+<p><em>Figure 6: &Delta; in rating with CoT shown and rating with CoT
+hidden per length decile (across all rollouts), showing that while CoT
+length does reduce the relative rating during CoT leakage (especially at
+10), there is an overall strong difference between eval-aware CoTs and
+clean CoTs even when controlling for length.</em></p>
+
+<p>We analyzed only the Wood Labs model organism from Hua et al. (2025),
+because we wanted to disentangle evaluation awareness from other
+behaviors like safety reasoning and refusal that frequently co-occur with
+evaluation awareness. However, because it is a toy model, it is possible
+that it behaves differently from frontier models in important ways.</p>
+
+<h3>Related Work</h3>
+
+<p>Baker et al. (2025) showed that optimizing against a CoT monitor for
+reward hacking caused obfuscated reward hacking. Hua et al. (2025)
+provided the fundamental model organism we used for testing unverbalized
+evaluation awareness (via type hints).</p>
+
+<hr class="fancy">
+
+<h2>References</h2>
+
+<ul>
+  <li>Aranguri, S., &amp; Bloom, J. (2026, May 4). <em>Verbalized eval
+awareness inflates measured safety</em>. Goodfire Research.
+<a href="https://www.goodfire.ai/research/verbalized-eval-awareness-inflates-measured-safety">https://www.goodfire.ai/research/verbalized-eval-awareness-inflates-measured-safety</a></li>
+  <li>Anthropic. (2026). <em>Alignment risk update: Claude Mythos
+preview</em>.
+<a href="https://www-cdn.anthropic.com/3edfc1a7f947aa81841cf88305cb513f184c36ae.pdf">https://www-cdn.anthropic.com/3edfc1a7f947aa81841cf88305cb513f184c36ae.pdf</a></li>
+  <li>Bai, Y., et al. (2022). <em>Constitutional AI: Harmlessness from AI
+feedback</em>. <a href="https://arxiv.org/abs/2212.08073">https://arxiv.org/abs/2212.08073</a></li>
+  <li>Baker, B., et al. (2025). <em>Monitoring reasoning models for
+misbehavior and the risks of promoting obfuscation</em>.
+<a href="https://arxiv.org/abs/2503.11926">https://arxiv.org/abs/2503.11926</a></li>
+  <li>Carroll, M., et al. (2026). <em>Investigating the consequences of
+accidentally grading CoT during RL</em>. OpenAI Alignment Research.
+<a href="https://alignment.openai.com/accidental-cot-grading/">https://alignment.openai.com/accidental-cot-grading/</a></li>
+  <li>Cui, G., et al. (2023). <em>UltraFeedback: Boosting language models
+with high-quality feedback</em> (arXiv:2310.01377). arXiv.
+<a href="https://doi.org/10.48550/arXiv.2310.01377">https://doi.org/10.48550/arXiv.2310.01377</a></li>
+  <li>Hua, T. T., Qin, A., Marks, S., &amp; Nanda, N. (2025). <em>Steering
+evaluation-aware language models to act like they are deployed</em>.
+<a href="https://doi.org/10.48550/arXiv.2510.20487">https://doi.org/10.48550/arXiv.2510.20487</a></li>
+  <li>Mallen, A., &amp; Greenblatt, R. (2026). <em>Anthropic repeatedly
+accidentally trained against the CoT, demonstrating inadequate
+processes</em>. AI Alignment Forum.
+<a href="https://www.alignmentforum.org/posts/K8FxfK9GmJfiAhgcT/anthropic-repeatedly-accidentally-trained-against-the-cot">https://www.alignmentforum.org/posts/K8FxfK9GmJfiAhgcT/anthropic-repeatedly-accidentally-trained-against-the-cot</a></li>
+  <li>Rafailov, R., et al. (2023). <em>Direct preference optimization:
+Your language model is secretly a reward model</em>. In A. Oh, T.
+Naumann, A. Globerson, K. Saenko, M. Hardt, &amp; S. Levine (Eds.),
+<em>Advances in Neural Information Processing Systems</em> (Vol. 36, pp.
+53728&ndash;53741).</li>
+</ul>
+
+<hr>
+
+<div class="horizontal">
+  <nav>
+    <ul>
+      <li><a href="/">about</a></li>
+      <li><a href="/blog.html">blog</a></li>
+      <li><a href="/herpetology.html">herpetology</a></li>
+    </ul>
+  </nav>
+</div>
+
+</body>
+</html>
