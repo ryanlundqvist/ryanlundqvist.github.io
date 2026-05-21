@@ -30,6 +30,52 @@ journal entry for context. The simulator may take a few seconds to
 boot &mdash; React + Babel are loaded from CDN and the JSX is transpiled
 in-browser.</p>
 
+<p><strong>Snakes.</strong> Each snake has a heritable RGB color and walks
+a biased random walk. Reproduction is sexual within species: two
+same-species adults inside a mate radius produce a clutch; both parents
+die. Offspring color = parent-blend + uniform mutation noise. Snakes die
+from old age, density mortality, or bird attack.</p>
+
+<p><strong>Birds.</strong> Each bird has continuous position, an energy
+pool that depletes per tick, and a heritable genome with three parameters:
+an avoid color (RGB), an avoid sharpness (Gaussian &sigma;), and a caution
+(peak avoidance probability). Birds scan within a forward FOV out to a
+finite range. Detection probability scales with snake-vs-background color
+contrast &mdash; camouflage works. Once a snake is detected,</p>
+
+<pre><code>P(avoid) = caution &middot; exp(-cDist&sup2; / (2&middot;sharpness&sup2;)) &middot; colorClarity</code></pre>
+
+<p>where <code>cDist</code> is RGB distance from the avoid color and
+<code>colorClarity</code> factors in the snake's contrast and saturation.
+If avoidance fails, the bird attacks. Toxic snake &rarr; mutual kill, no
+energy. Non-toxic snake &rarr; snake dies, bird gains energy. Birds
+reproduce asexually when energy crosses a threshold (paying an energy
+cost), plus a one-shot bonus reproduction at advanced age. Birds die from
+starvation, old age, or attacking a toxic snake.</p>
+
+<p><strong>Inheritance.</strong> Snake offspring color: blended parents +
+per-channel uniform noise. Bird offspring genome: single parent + per-gene
+uniform noise.</p>
+
+<p><strong>Population floors.</strong> If a species drops below a minimum,
+replacements respawn with colors mutated off the species' last-known
+average &mdash; evolved state survives population crashes.</p>
+
+<p><strong>Pressures.</strong></p>
+
+<ul>
+  <li>Birds whose avoid color matches the toxic species avoid mutual-kill
+attacks and out-reproduce the rest; the avoid color tracks toxic snake
+color across generations.</li>
+  <li>Toxic snakes face reduced predation once birds have learned, so
+their color drifts under weak constraint, often toward the avoid color
+(aposematism).</li>
+  <li>Non-toxic snakes face full predation. They escape by drifting toward
+the toxic color (Batesian mimicry) or toward the background (camouflage).
+The population usually mixes both, modulated by <strong>mimic-load</strong>,
+too many mimics dilute the warning and selection re-shifts.</li>
+</ul>
+
 <div style="position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; width: 100vw;">
   <div id="simulator-root">
     <p style="text-align: center; padding: 2em; color: #666; font-style: italic;">Loading simulator&hellip;</p>
